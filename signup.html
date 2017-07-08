@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <title>Stock Predictor</title>
+    <meta name="description" content="Stock Predictor">
+
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+</head>
+
+<style>
+    body {
+        padding-top: 40px;
+    }
+
+</style>
+
+<body data-spy="scroll" data-target="#my-navbar" background="stock.jpg">
+
+
+    <!-- Navbar -->
+
+    <nav class="navbar navbar-inverse navbar-fixed-top" id="my-navbar">
+        <div class="container">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+                <a href="signup.html" class="navbar-brand">Stock Predictor</a>
+            </div>
+
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="signup.html"><span class="glyphicon glyphicon-user"></span>Sign Up</a></li>
+                    <li><a href="index.html"><span class="glyphicon glyphicon-log-in"></span>Login</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+    </nav>
+
+    <br><br>
+
+    <div class="container">
+        <div class="row main">
+            <div class="main-login main-center">
+                <h3 class="text-center">Sign up once and check prediciton forever!</h3>
+                <form class="" method="post" action="signup.php">
+
+                    <div class="form-group">
+                        <label for="name" class="cols-sm-2 control-label">Full Name</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-user fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="name" id="name" placeholder="Enter your Name" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="cols-sm-2 control-label">Email Address</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Enter your Email" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="username" class="cols-sm-2 control-label">Username</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                                <input type="text" class="form-control" name="username" id="username" placeholder="Enter your Username" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password" class="cols-sm-2 control-label">Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                <input type="password" class="form-control" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="8 or more characters; at least one number, one uppercase and one lowercase letter" placeholder="Enter your Password" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="confirm" class="cols-sm-2 control-label">Confirm Password</label>
+                        <div class="cols-sm-10">
+                            <div class="input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                                <input type="password" class="form-control" name="confirm" id="confirm" placeholder="Confirm your Password" required/>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group ">
+                        <input type="submit" id="button" class="btn btn-primary btn-lg btn-block login-button" value="Register">
+                    </div>
+
+                    <h3 class="text-center">Already have an account? Sign in <a href="index.html">here.</a></h3>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container-fluid text-center" id="foot">
+
+            <h4>Find us on ...</h4>
+            <ul class="list-inline">
+                <li><a href="#" target="_blank"><span><img src="tuter.png" height="50" width="50" alt="twitter"></span></a></li>
+                <li><a href="#" target="_blank"><span><img src="utube.png" height="50" width="50" alt="youtube"></span></a></li>
+                <li><a href="#" target="_blank"><span><img src="link.png" height="50" width="50" alt="linkedin"></span></a></li>
+                <li><a href="#" target="_blank"><span><img src="fb.png" height="50" width="50" alt="facebook"></span></a></li>
+                <li><a href="#" target="_blank"><span><img src="git.jpeg" height="50" width="50" alt="github"></span></a></li>
+            </ul>
+
+            <p>&copy; Copyright @ 2017</p>
+
+        </div>
+    </footer>
+
+    <script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
